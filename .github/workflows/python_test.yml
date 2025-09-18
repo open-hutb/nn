@@ -23,12 +23,12 @@ jobs:
       - name: Python script testing
         working-directory: ./src
         run: |
-          python chap01_warmup/numpy_tutorial.py
-          python chap02_linear_regression/exercise-linear_regression.py
-          python chap02_linear_regression/linear_regression-tf2.0.py
-          python chap03_softmax_regression/logistic_regression-exercise.py
-          python chap03_softmax_regression/softmax_regression-exercise.py
-          python chap03_softmax_regression/svm.py
-          python chap04_simple_neural_network/tf2.0-exercise.py
-          python chap04_simple_neural_network/tutorial_minst_fnn-numpy-exercise.py
-          python chap04_simple_neural_network/tutorial_minst_fnn-tf2.0-exercise.py
+          cd chap01_warmup && python numpy_tutorial.py
+          cd chap02_linear_regression && python exercise-linear_regression.py
+          cd chap02_linear_regression && python linear_regression-tf2.0.py
+          cd chap03_softmax_regression && python logistic_regression-exercise.py
+          cd chap03_softmax_regression && python softmax_regression-exercise.py
+          cd chap03_softmax_regression && python svm.py
+          cd chap04_simple_neural_network && python tf2.0-exercise.py
+          cd chap04_simple_neural_network && python tutorial_minst_fnn-numpy-exercise.py
+          cd chap04_simple_neural_network && python tutorial_minst_fnn-tf2.0-exercise.py
