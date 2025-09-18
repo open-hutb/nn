@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 # rc：运行时配置(runtime configuration)，用于设置图形默认参数
 from matplotlib import animation, rc
 # 导入 IPython 的 HTML 显示功能，用于在 Notebook 中嵌入动画
-from IPython.display import HTML
+# from IPython.display import HTML
 # 导入 matplotlib 的 colormap 模块，用于颜色映射
 import matplotlib.cm as cm
 # 导入 NumPy 数值计算库
@@ -28,7 +28,7 @@ np.random.seed(42)
 tf.random.set_seed(42)
 
 # 确保在 Jupyter Notebook 中内联显示图形
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 # 设置数据点数量
 DOT_NUM = 100
@@ -278,5 +278,5 @@ if __name__ == '__main__':
         frames=len(animation_frames), interval=50, blit=True, repeat=False # 帧间隔(毫秒)，是否使用blitting优化，# 是否循环播放
     )
 
-    from IPython.display import HTML
-    HTML(anim.to_html5_video())# 将动画转换为HTML5视频并显示
+    # from IPython.display import HTML
+    # HTML(anim.to_html5_video())# 将动画转换为HTML5视频并显示
