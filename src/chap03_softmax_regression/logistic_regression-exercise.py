@@ -31,7 +31,7 @@ tf.random.set_seed(42)
 # get_ipython().run_line_magic('matplotlib', 'inline')
 
 # 设置数据点数量
-DOT_NUM = 100
+dot_num = 100
 # 从均值为3，标准差为1的高斯分布中采样x坐标，用于正样本
 x_p = np.random.normal(3., 1, dot_num)
 # 从均值为6，标准差为1的高斯分布中采样y坐标，用于正样本
